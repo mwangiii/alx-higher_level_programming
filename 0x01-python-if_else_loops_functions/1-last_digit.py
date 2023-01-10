@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-# The string Last digit of, followed by,the number, followed by,the string is, followed by the last digit of number, followed by
+# The string Last digit of,
+# followed by the number,
+# followed by the string is,
+# followed by the last digit of number,
+# followed by:
 string = "Last digit of {} is {} and {}"
 if number < 0:
     lastdigit = number % -10
