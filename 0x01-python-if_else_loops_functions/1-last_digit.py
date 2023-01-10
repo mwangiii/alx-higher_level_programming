@@ -6,8 +6,9 @@ string = "Last digit of {} is {} and {}"
 # the number, followed by
 # the string is, followed by the last digit of number, followed by
 if number < 0:
-    number * -1
-lastdigit = number % 10
+    lastdigit = number % -10
+else:
+    lastdigit = number % 10
 # if the last digit is greater than 5: the string and is greater than 5
 if lastdigit > 5:
     print(string.format(number, lastdigit, "is greater than 5"))
