@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from string import ascii_lowercase
-
-f = ascii_lowercase
-print("{}".format(f))
+num = 97
+while num < 123:
+    print("{}".format(chr(num)), end="")
+    num = num + 1
