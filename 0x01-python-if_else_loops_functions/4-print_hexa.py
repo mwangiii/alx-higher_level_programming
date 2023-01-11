@@ -4,6 +4,5 @@
 # You are not allowed to import any module
 
 #!/usr/bin/python3
-
 for i in range(0, 99):
     print("{:f}={}".format(i, hex(i)))
