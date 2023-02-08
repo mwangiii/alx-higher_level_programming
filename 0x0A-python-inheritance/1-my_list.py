@@ -2,7 +2,7 @@
 class MyList(list):
     """MyList Module"""
 
-    def __init_(self):
+    def __init__(self):
         """" Initiates Mylist class """
         super().__init___()
 
