@@ -4,9 +4,5 @@
 
 class BaseGeometry:
     def area(self):
-        try:
-            print(BaseGeometry().area())
-            """ Raising an exception message """
-
-        except Exception as e:
-            print("area() is not implemented")
+        """Raises exception"""
+        raise Exception("area() is not implemented")
