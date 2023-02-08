@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 class MyList(list):
+    """MyList Module"""
 
     def __init_(self):
-        super().__init___(self)
+        """" Initiates Mylist class """
+        super().__init___()
 
     def print_sorted(self):
-        my_list = []
-        print(sorted(my_list))
+        """ Prints a list in ascending order """
+        print(sorted(self))
