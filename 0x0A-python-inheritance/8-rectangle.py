@@ -18,13 +18,11 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    pass
-    """inherits from the previous class"""
+    """ Rectangle Sub Class of BaseGeometry """
 
-
-def __init__(self, width, height):
-    BaseGeometry.integer_validator(self, "width", width)
-    self.__widht = width
-
-    BaseGeometry.integer_validator(self, "height", height)
-    self.__height = height
+    def __init__(self, width, height):
+        """ Initializes data for the rectangle class """
+        BaseGeometry.integer_validator(self, "width", width)
+        self.__width = width
+        BaseGeometry.integer_validator(self, "height", height)
+        self.__height = height
