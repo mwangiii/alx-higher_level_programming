@@ -2,12 +2,13 @@
 def say_my_name(first_name, last_name=""):
     """
         first_name and last_name must be strings otherwise
+        raise TypeError(first_name must be a string or last_name must be a string)
     """
 
-    if not isinstance(first_name, str):
+    if first_name != type(str):
         TypeError("first_name must be a string")
 
-    if not isinstance(last_name, str):
+    if last_name != type(str):
         TypeError("last_name must be a string")
 
     print("My name is {} {}").format(first_name, last_name)
