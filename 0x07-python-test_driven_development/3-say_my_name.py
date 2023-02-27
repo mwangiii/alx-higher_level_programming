@@ -6,10 +6,10 @@ def say_my_name(first_name, last_name=""):
         or (last_name must be a string)
     """
 
-    if first_name != type(str):
+    if type(first_name) != str:
         raise TypeError("first_name must be a string")
 
-    elif last_name != type(str):
+    elif type(last_name) != str:
         raise TypeError("last_name must be a string")
 
     else:
