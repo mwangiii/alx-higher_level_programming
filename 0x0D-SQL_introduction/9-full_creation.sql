@@ -26,4 +26,3 @@ VALUES
     “George”, 
     8
 );
-   
