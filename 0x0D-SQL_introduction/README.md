@@ -1,1 +1,4 @@
-# THIS REPOSITORY CONTAINS SCRIPTS WRITTEN FOR DATABASES
+# 🔗 0x0D-SQL_introduction
+
+    By: mwangi
+    Weight: 1
