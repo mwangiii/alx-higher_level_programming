@@ -1,20 +1,12 @@
 #!/usr/bin/node
 
-// Importing the dict dictionary from the 101-data.js file
-const { dict } = require('./101-data');
+const dict = require('./101-data.js').dict;
+const output = {};
 
-// Computing a new dictionary of user IDs by occurrence
-const newDict = {};
-
-for (const userId in dict) {
-  const occurrence = dict[userId];
-
-  if (newDict[occurrence]) {
-    newDict[occurrence].push(userId);
-  } else {
-    newDict[occurrence] = [userId];
+for (const [key, value] of Object.entries(dict)) {
+  if (output[value] === undefined) {
+    output[value] = [];
   }
+  output[value].push(key);
 }
-
-// Printing the new dictionary
-console.log(newDict);
+console.log(output);
